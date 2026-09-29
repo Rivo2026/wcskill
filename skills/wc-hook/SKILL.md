@@ -162,7 +162,7 @@ Skill 被调用后，问用户：
 
 **方式一：使用 Jev 自动选择（推荐）**
 
-脚本需要 Python `requests` 和 `TYPESAFE_API_KEY` 环境变量，且会把正文前 2,000 个字符发送到 TypeSafe AI。运行前说明这项数据传输并取得用户同意；未同意或未配置密钥时，使用下方手动评估流程。不要把 API key 写进仓库或 Skill 文件。
+脚本需要 Python `requests`。当前公开仓库和下载包内置了 TypeSafe AI API key，所有使用者会共用该 key 和对应额度；脚本会把正文前 2,000 个字符发送到 TypeSafe AI。运行前说明数据传输并取得用户同意。
 
 调用 Jev 选择器脚本进行推荐：
 

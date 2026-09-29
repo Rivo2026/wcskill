@@ -202,11 +202,10 @@ Jev 选择器使用 TypeSafe AI 的官方 API：
 - **模型**：`jev-latest`
 - **认证**：`Authorization: Bearer <你的apikey>`
 
-API Key 不保存在仓库。先安装 `requests` 并设置 `TYPESAFE_API_KEY` 环境变量，再运行脚本。脚本会把输入正文的前 2,000 个字符发送到 TypeSafe AI；使用前应先告知用户并取得同意。不配置密钥时，按 Skill 的手动评估流程选择 FS。
+当前公开仓库及下载包内含 TypeSafe AI API key，使用者共享同一额度。运行脚本会把输入正文的前 2,000 个字符发送到 TypeSafe AI；使用前应先告知用户并取得同意。依赖为 Python `requests`：
 
 ```bash
 python3 -m pip install requests
-export TYPESAFE_API_KEY="你的 TypeSafe AI API key"
 ```
 
 ---

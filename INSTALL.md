@@ -15,7 +15,7 @@ wcskill 是望川的学员内容创作工具箱，官方仓库为 https://github
 4. 安装器会备份有来源标记的旧版内容并保留其他工具及用户存档。遇到来源不明的同名目录时先核对，不要直接覆盖；只有确认属于用户授权更新的旧版 wcskill，才使用 `--replace-existing`。
 5. 读取安装结果与目标目录中的十二个 `SKILL.md`，报告实际结果；不需要试跑内容任务。提示学员新建对话使用。后续直接说“帮我更新 wcskill”。
 
-如果原始文件下载不可用，可以下载 [整套发布包](https://github.com/Rivo2026/wcskill/releases/download/v2.5.0/wcskill-workbuddy-2.5.0.zip)，解压后在含 `install.py` 的目录执行 `python3 install.py --source .`（Windows 使用 `py -3`）。
+如果原始文件下载不可用，可以下载 [整套发布包](https://github.com/Rivo2026/wcskill/releases/download/v2.5.1/wcskill-workbuddy-2.5.1.zip)，解压后在含 `install.py` 的目录执行 `python3 install.py --source .`（Windows 使用 `py -3`）。
 
 ## Codex / Claude Code
 

@@ -48,13 +48,13 @@ Claude Code 用户把 `--agent codex` 改为 `--agent claude-code`。命令使�
 
 ### WorkBuddy 安装
 
-SkillHub 整套条目于 2026-09-06 以 v2.4.0 内容提交审核，名称为 **wcskill · 望川内容创作工具箱**，Slug 为 `wcskill`，发布者为“望川”。本次 GitHub v2.5.0 发布不代表 SkillHub 市场条目已同步更新；市场审核和上架状态仍以 SkillHub 为准。
+SkillHub 整套条目于 2026-09-06 以 v2.4.0 内容提交审核，名称为 **wcskill · 望川内容创作工具箱**，Slug 为 `wcskill`，发布者为“望川”。本次 GitHub v2.5.1 发布不代表 SkillHub 市场条目已同步更新；市场审核和上架状态仍以 SkillHub 为准。
 
-市场版将十二个工具及全部资料、脚本放在一个 `wcskill` 包内，一次安装即可按任务读取使用。也可从 GitHub 下载 [wcskill 单包导入版](https://github.com/Rivo2026/wcskill/releases/download/v2.5.0/wcskill-skillhub-2.5.0.zip)，作为一个 Skill 导入。它与下面的离线安装包用途不同：单包版自带总入口，可直接使用；离线安装包将十二个工具分别安装到客户端。
+市场版将十二个工具及全部资料、脚本放在一个 `wcskill` 包内，一次安装即可按任务读取使用。也可从 GitHub 下载 [wcskill 单包导入版](https://github.com/Rivo2026/wcskill/releases/download/v2.5.1/wcskill-skillhub-2.5.1.zip)，作为一个 Skill 导入。它与下面的离线安装包用途不同：单包版自带总入口，可直接使用；离线安装包将十二个工具分别安装到客户端。
 
 直接把上面的一句话发给 WorkBuddy，由它读取 [INSTALL.md](INSTALL.md) 并安装十二个工具。以下下载方式仅作备用。
 
-也可以下载 [WorkBuddy 整套安装包](https://github.com/Rivo2026/wcskill/releases/download/v2.5.0/wcskill-workbuddy-2.5.0.zip)，解压后把文件夹交给 WorkBuddy，并说：
+也可以下载 [WorkBuddy 整套安装包](https://github.com/Rivo2026/wcskill/releases/download/v2.5.1/wcskill-workbuddy-2.5.1.zip)，解压后把文件夹交给 WorkBuddy，并说：
 
 > 请读取安装说明，用随附的 install.py 将这套 wcskill 安装到 WorkBuddy，保留我的存档和已有修改。
 
@@ -66,7 +66,7 @@ SkillHub 整套条目于 2026-09-06 以 v2.4.0 内容提交审核，名称为 **
 python3 skills/wc-update/scripts/workbuddy_install.py --source .
 ```
 
-喜欢界面导入的学员，可以在 [发布页](https://github.com/Rivo2026/wcskill/releases/tag/v2.5.0) 下载十二个单独的 WorkBuddy 技能 ZIP 包，通过“技能 → 添加技能 → 上传技能”逐个导入。整套安装包用于解压安装，不作为单个 Skill 上传。导入后在“已安装”中确认启用，再新建对话说“望川工具箱有哪些工具”。[WorkBuddy 官方安装说明](https://www.codebuddy.cn/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Skills-Market)
+喜欢界面导入的学员，可以在 [发布页](https://github.com/Rivo2026/wcskill/releases/tag/v2.5.1) 下载十二个单独的 WorkBuddy 技能 ZIP 包，通过“技能 → 添加技能 → 上传技能”逐个导入。整套安装包用于解压安装，不作为单个 Skill 上传。导入后在“已安装”中确认启用，再新建对话说“望川工具箱有哪些工具”。[WorkBuddy 官方安装说明](https://www.codebuddy.cn/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Skills-Market)
 
 WorkBuddy 包由同一套核心 Skill 自动生成，保留正文、参考资料和脚本，并补充导入所需的中文介绍、英文介绍、版本和作者信息。`wc` 是总入口，整套使用需要安装全部十二个 Skill。
 
@@ -114,7 +114,7 @@ Claude Code 用户把示例中的 `$` 改为 `/`。
 
 ## 内容写作工具状态
 
-`wc-hook` 当前仍是试用框架，文档标注部分规则尚待独立窗口验证。Jev 选择器需要 Python `requests` 和 TypeSafe AI API key；运行脚本会把正文前 2,000 字发送到 TypeSafe AI。未配置 key 时按 Skill 中的手动选择流程执行。
+`wc-hook` 当前仍是试用框架，文档标注部分规则尚待独立窗口验证。Jev 选择器需要 Python `requests`；当前公开仓库和下载包内含 TypeSafe AI API key，使用者共享对应额度。运行脚本会把正文前 2,000 字发送到 TypeSafe AI，使用前需告知用户并取得同意。
 
 ## 表格依赖
 

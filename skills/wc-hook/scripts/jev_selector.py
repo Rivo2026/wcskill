@@ -6,12 +6,11 @@ Jev FS 选择器 V3 - 开头效果评估版
 
 import re
 import json
-import os
 import requests
 from typing import Dict, Any, Optional
 
 # TypeSafe AI Jev API 配置
-TYPESAFE_API_KEY = os.environ.get("TYPESAFE_API_KEY")
+TYPESAFE_API_KEY = "apikey_21138e41c8f335424932b9aa761111ccfb0c_365e36534347941a09e421580e41e59dd76fe697b0666834b752313fa0489205"
 TYPESAFE_API_URL = "https://api.typesafe.ai/v1/systemone"
 JEV_MODEL = "jev-latest"
 
@@ -135,9 +134,6 @@ def call_jev_evaluate_opening(content: str, features: Dict[str, Any]) -> Optiona
 
 def _call_jev_api(jev_request: Dict[str, Any]) -> Optional[Dict[str, Any]]:
     """调用 Jev API"""
-    if not TYPESAFE_API_KEY:
-        print("❌ 未配置 TYPESAFE_API_KEY；请设置 TypeSafe AI API key，或按 Skill 规则手动选择 FS。")
-        return None
     try:
         response = requests.post(
             TYPESAFE_API_URL,
