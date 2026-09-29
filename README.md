@@ -1,12 +1,17 @@
 # wcskill
 
-望川的学员内容创作工具箱。当前提供 7 个 Skill：一个入口、五项内容与学习能力和一项更新工具。
+望川的学员内容创作工具箱。当前提供 12 个 Skill：一个入口、十项内容与学习能力和一项更新工具。
 
 ## 工具
 
 | Skill | 功能 | 输入 | 输出 |
 | --- | --- | --- | --- |
 | `wc` | 工具箱入口 | 你当前想完成的任务 | 合适的工具及所需材料 |
+| `wc-content-prep` | 内容准备与观点共创 | 素材、经历、观点或同行文案 | 经讨论形成的写作依据和中心判断 |
+| `wc-author-voice` | 作者思维画像 | 指定作者的多篇文案 | 思维方式、论证逻辑和表达习惯画像 |
+| `wc-draft` | 短视频正文写作 | 用户材料及可选作者语料 | 完整口播正文或结构化方案 |
+| `wc-hook` | 短视频开头生成（试用框架） | 已有正文和内容目的 | 匹配方法后的开头及正文衔接 |
+| `wc-check` | 全稿检查与修订 | 完整口播稿或独立稿件 | 修订稿或诊断报告 |
 | `wc-organize` | 短视频语料整理 | 含正文和各项数据的短视频 CSV | 原始数据表、气口断行稿、开局／交付／收束分区、首拍片段与机制对照表 |
 | `wc-dy-hook` | 抖音开头分析与生成 | 对标文案和数据表；或正文与已有范式库 | 开头范式库，或 5–10 个备选开头 |
 | `wc-xhs-title` | 小红书标题生成 | 话题／正文及目标受众 | 从 62 套结构中匹配的标题方案 |
@@ -33,7 +38,7 @@ DISABLE_TELEMETRY=1 npx -y skills add Rivo2026/wcskill --skill wc-organize --age
 
 Claude Code 用户把 `--agent codex` 改为 `--agent claude-code`。命令使用 [Skills CLI](https://github.com/vercel-labs/skills)，需要 Git、Node.js 和 npm/npx；安装与更新命令关闭其匿名使用统计。
 
-也可以下载本仓库，或运行 `git clone https://github.com/Rivo2026/wcskill.git`，把 `skills/` 下的 7 个文件夹分别放进所用客户端的 Skill 目录。每个文件夹里应直接包含 `SKILL.md`，并保留随附的 `references/`、`scripts/`、`agents/`。
+也可以下载本仓库，或运行 `git clone https://github.com/Rivo2026/wcskill.git`，把 `skills/` 下的 12 个文件夹分别放进所用客户端的 Skill 目录。每个文件夹里应直接包含 `SKILL.md`，并保留随附的 `references/`、`scripts/`、`agents/`。
 
 | 客户端 | 用户级 Skill 目录 | 调用示例 |
 | --- | --- | --- |
@@ -43,13 +48,13 @@ Claude Code 用户把 `--agent codex` 改为 `--agent claude-code`。命令使�
 
 ### WorkBuddy 安装
 
-SkillHub 整套条目已于 2026-09-06 提交审核，名称为 **wcskill · 望川内容创作工具箱**，Slug 为 `wcskill`，发布者为“望川”。审核通过并可检索后，可以让助手搜索并安装这个条目；提交审核不代表已经在市场上架。
+SkillHub 整套条目于 2026-09-06 以 v2.4.0 内容提交审核，名称为 **wcskill · 望川内容创作工具箱**，Slug 为 `wcskill`，发布者为“望川”。本次 GitHub v2.5.0 发布不代表 SkillHub 市场条目已同步更新；市场审核和上架状态仍以 SkillHub 为准。
 
-市场版将七个工具及全部资料、脚本放在一个 `wcskill` 包内，一次安装即可按任务读取使用。也可从 GitHub 下载 [wcskill 单包导入版](https://github.com/Rivo2026/wcskill/releases/download/v2.4.0/wcskill-skillhub-2.4.0.zip)，作为一个 Skill 导入。它与下面的离线安装包用途不同：单包版自带总入口，可直接使用；离线安装包将七个工具分别安装到客户端。
+市场版将十二个工具及全部资料、脚本放在一个 `wcskill` 包内，一次安装即可按任务读取使用。也可从 GitHub 下载 [wcskill 单包导入版](https://github.com/Rivo2026/wcskill/releases/download/v2.5.0/wcskill-skillhub-2.5.0.zip)，作为一个 Skill 导入。它与下面的离线安装包用途不同：单包版自带总入口，可直接使用；离线安装包将十二个工具分别安装到客户端。
 
-直接把上面的一句话发给 WorkBuddy，由它读取 [INSTALL.md](INSTALL.md) 并安装七个工具。以下下载方式仅作备用。
+直接把上面的一句话发给 WorkBuddy，由它读取 [INSTALL.md](INSTALL.md) 并安装十二个工具。以下下载方式仅作备用。
 
-也可以下载 [WorkBuddy 整套安装包](https://github.com/Rivo2026/wcskill/releases/download/v2.4.0/wcskill-workbuddy-2.4.0.zip)，解压后把文件夹交给 WorkBuddy，并说：
+也可以下载 [WorkBuddy 整套安装包](https://github.com/Rivo2026/wcskill/releases/download/v2.5.0/wcskill-workbuddy-2.5.0.zip)，解压后把文件夹交给 WorkBuddy，并说：
 
 > 请读取安装说明，用随附的 install.py 将这套 wcskill 安装到 WorkBuddy，保留我的存档和已有修改。
 
@@ -61,9 +66,9 @@ SkillHub 整套条目已于 2026-09-06 提交审核，名称为 **wcskill · 望
 python3 skills/wc-update/scripts/workbuddy_install.py --source .
 ```
 
-喜欢界面导入的学员，可以在 [发布页](https://github.com/Rivo2026/wcskill/releases/tag/v2.4.0) 下载七个单独的 WorkBuddy 技能 ZIP 包，通过“技能 → 添加技能 → 上传技能”逐个导入。整套安装包用于解压安装，不作为单个 Skill 上传。导入后在“已安装”中确认启用，再新建对话说“望川工具箱有哪些工具”。[WorkBuddy 官方安装说明](https://www.codebuddy.cn/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Skills-Market)
+喜欢界面导入的学员，可以在 [发布页](https://github.com/Rivo2026/wcskill/releases/tag/v2.5.0) 下载十二个单独的 WorkBuddy 技能 ZIP 包，通过“技能 → 添加技能 → 上传技能”逐个导入。整套安装包用于解压安装，不作为单个 Skill 上传。导入后在“已安装”中确认启用，再新建对话说“望川工具箱有哪些工具”。[WorkBuddy 官方安装说明](https://www.codebuddy.cn/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Skills-Market)
 
-WorkBuddy 包由同一套核心 Skill 自动生成，保留正文、参考资料和脚本，并补充导入所需的中文介绍、英文介绍、版本和作者信息。`wc` 是总入口，整套使用需要安装全部七个 Skill。
+WorkBuddy 包由同一套核心 Skill 自动生成，保留正文、参考资料和脚本，并补充导入所需的中文介绍、英文介绍、版本和作者信息。`wc` 是总入口，整套使用需要安装全部十二个 Skill。
 
 本版抖音开头 Skill 名称是 `wc-dy-hook`。旧版使用 `wc-hook-dy`，升级时请用新名称替换旧入口。
 
@@ -89,6 +94,14 @@ $wc-xhs-title 给这篇文章起小红书标题，目标读者是刚开始做内
 $wc-research 帮我为这个问题推荐一组思想家，共同研究不同解释与依据。
 
 $wc-position 根据我的产品、客户和经历，制定人设定位方案。
+
+$wc-content-prep 整理我的素材和观点，形成一份写作依据。
+
+$wc-draft 根据我确认的框架写完整口播正文。
+
+$wc-hook 根据这篇正文设计开头，并接入正文。
+
+$wc-check 检查并修订这篇完整口播稿。
 ```
 
 Claude Code 用户把示例中的 `$` 改为 `/`。
@@ -98,6 +111,10 @@ Claude Code 用户把示例中的 `$` 改为 `/`。
 每个 CSV 生成一份 `原文件名·断行整理版.md`，默认处理全部记录。每篇先用普通表格保留原字段与原值，再按气口断行，使用独立的“开局、交付、收束”标题。开局下方用“对应片段｜截停机制”小表，明确标出第一拍哪里用了什么机制。
 
 不生成存疑表、清洗改动清单、判断说明、校验附录或折叠 JSON。清洗只处理证据明确的转写错误，源 CSV 保持不变；空正文保留数据并标明未做断行。数据与正文拼回由脚本校验，段界和机制仍需语义复核。
+
+## 内容写作工具状态
+
+`wc-hook` 当前仍是试用框架，文档标注部分规则尚待独立窗口验证。Jev 选择器需要 Python `requests` 和 TypeSafe AI API key；运行脚本会把正文前 2,000 字发送到 TypeSafe AI。未配置 key 时按 Skill 中的手动选择流程执行。
 
 ## 表格依赖
 

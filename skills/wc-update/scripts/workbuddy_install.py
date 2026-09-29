@@ -19,6 +19,11 @@ ARCHIVE_URL = "https://codeload.github.com/Rivo2026/wcskill/zip/refs/heads/main"
 MARKER = "wcskill-source.json"
 DESCRIPTIONS = {
     "wc": ("望川内容工具箱入口，选择内容创作、研究与更新工具。", "Route content creation, research and toolkit update requests."),
+    "wc-author-voice": ("从多篇文案提取作者的思维方式、论证逻辑和表达习惯。", "Extract an author's thinking, reasoning and expression patterns from their writing."),
+    "wc-check": ("检查或修订完整口播稿，保留已确认的观点和事实边界。", "Review or revise a complete spoken script while preserving its intent and facts."),
+    "wc-content-prep": ("整理内容素材并通过讨论形成有依据的写作判断。", "Prepare content material and develop evidence-based writing decisions."),
+    "wc-draft": ("根据材料和确认的框架撰写完整口播正文。", "Draft a complete spoken script from supplied material and an approved framework."),
+    "wc-hook": ("根据已有正文设计并衔接短视频开头；当前为试用框架。", "Create and connect a short-video opening from an existing script; preview framework."),
     "wc-organize": ("保留短视频 CSV 数据，整理口播断行与首拍分析。", "Organize short-video CSV scripts while preserving original data."),
     "wc-dy-hook": ("从对标内容提炼并生成抖音短视频开头。", "Analyze reference videos and generate Douyin opening hooks."),
     "wc-xhs-title": ("根据话题和受众生成小红书标题。", "Generate Xiaohongshu titles for a topic and audience."),
