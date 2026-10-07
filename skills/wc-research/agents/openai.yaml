@@ -1,0 +1,4 @@
+interface:
+  display_name: "wc-research"
+  short_description: "组织社会学、哲学、传播学与心理学人物圆桌，通过独立研究和交叉回应推进理解"
+  default_prompt: "使用 $wc-research 为这个问题推荐一组思想家，说明各自负责什么，再共同研究和讨论。"

@@ -1,0 +1,4 @@
+interface:
+  display_name: "wc-position · 人设定位"
+  short_description: "结合业务与本人实力制定人设，提供表达、视觉建议、差异化和成长路线"
+  default_prompt: "使用 $wc-position，根据我的业务、客户和经历，制定完整的人设定位方案。"

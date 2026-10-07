@@ -1,0 +1,4 @@
+interface:
+  display_name: "wc-update"
+  short_description: "一句话更新望川工具箱，备份本地修改并保留用户存档与其他 Skill"
+  default_prompt: "使用 $wc-update，同步官方 wcskill 更新并保留用户本地资产。"
