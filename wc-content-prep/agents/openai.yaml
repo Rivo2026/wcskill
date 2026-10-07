@@ -1,0 +1,4 @@
+interface:
+  display_name: "wc-content-prep"
+  short_description: "内容共创：通过讨论整理口播素材与写作依据，提炼并检验差异化观点"
+  default_prompt: "使用 $wc-content-prep 整理我的内容材料，并在需要时结合同行选题和观点提炼有依据的差异化判断。"
